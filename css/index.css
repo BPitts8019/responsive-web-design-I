@@ -63,16 +63,24 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/** Your Code begins here **/
 .container {
-	margin: auto;
+	margin: 0 auto;
 	width: 880px;
 }
 
 nav {
-	display: flex;
+   display: flex;
 	justify-content: space-between;
-	align-items: center;
+   align-items: center;
+}
+
+.nav-bar {
+   width: 100%;
+
+   display: flex;
+	justify-content: space-between;
+   align-items: center;
 }
 
 nav a {
@@ -85,7 +93,7 @@ nav a {
 
 img.logo {
 	margin-top: 30px;
-	margin-left: 30px;
+	margin-left: 60px;
 }
 
 header {
@@ -140,7 +148,8 @@ section {
 }
 
 section img {
-	margin-bottom: 36px;
+   margin-bottom: 36px;
+   width: 100%;
 }
 
 address {
@@ -222,4 +231,30 @@ footer {
 
 .service-item p {
 	margin-bottom: 15px;
+}
+
+/** Media queries for responsive website **/
+@media (max-width: 800px) {
+   .container {
+      width: 800px;
+   }
+
+   nav {
+      flex-wrap: wrap-reverse;
+   }
+
+   img.logo {
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   img.index-title-img {
+      display: none;
+   }
+}
+
+@media (max-width: 500px) {
+   .container {
+      width: 500px;
+   }
 }
