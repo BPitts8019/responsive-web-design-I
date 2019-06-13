@@ -199,12 +199,12 @@ footer {
 .main-info {
 	margin-top: 38px;
 	margin-bottom: 36px;
-	width: 423px;
+   width: 49%;
 }
 
 .extra-info {
-	width: 276px;
-	margin-bottom: 46px;
+   margin-bottom: 46px;
+   width: 31%;
 }
 
 /* Services page specific  styles */
@@ -248,13 +248,17 @@ footer {
       margin-right: auto;
    }
 
+   .title-container {
+      margin: 0 auto;
+   }
+
    img.index-title-img {
       display: none;
    }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
    .container {
       width: 500px;
    }
-}
+} */
