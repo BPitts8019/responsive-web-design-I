@@ -71,8 +71,8 @@ h1, h2, h3, h4, h5 {
 
 nav {
    display: flex;
-	justify-content: space-between;
    align-items: center;
+   margin-top: 30px;
 }
 
 .nav-bar {
@@ -87,12 +87,10 @@ nav a {
 	color: lightgrey;
 	font-size: 14px;
 	font-weight: bolder;
-	margin-top: 30px;
 	text-decoration: none;
 }
 
 img.logo {
-	margin-top: 30px;
 	margin-left: 60px;
 }
 
@@ -241,11 +239,11 @@ footer {
 
    nav {
       flex-wrap: wrap-reverse;
+      margin: 0;
    }
 
    img.logo {
-      margin-left: auto;
-      margin-right: auto;
+      margin: 30px auto;
    }
 
    .title-container {
@@ -257,8 +255,25 @@ footer {
    }
 }
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
    .container {
       width: 500px;
    }
-} */
+
+   img.logo {
+      margin: 15px auto;
+   }
+
+   .nav-bar {
+      flex-direction: column;
+   }
+   .nav-bar a {
+      border-top: 1px solid black;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+   } 
+   .nav-bar a:last-child {
+      border-bottom: 1px solid black;
+   }
+}
